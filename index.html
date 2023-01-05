@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+      span {
+        border: 1px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <span>Digite a senha:</span>
+    <br>
+    <input type="password" id="senha">
+    <br>
+    <button onclick="verificarSenha()">Enviar</button>
+    <br>
+    <br>
+    <iframe id="online-alarm-kur-iframe" src="https://embed-countdown.onlinealarmkur.com/pt/#2023-01-06T00:00:00@America%2FSao_Paulo" width="480" height="80" style="display: block; margin: 0px auto; border: 0px;"></iframe>
+    <script>
+      function verificarSenha() {
+        // Obtém o valor digitado pelo usuário
+        var senhaDigitada = document.getElementById("senha").value;
+
+        // Define a senha criptografada esperada
+        var senhaEsperada = "1620"; // Valac criptografado com a criptografia de César
+
+        // Verifica se a senha está correta
+        if (senhaDigitada == senhaEsperada) {
+          // Redireciona o usuário para o site desejado
+          window.location.href = "https://pastebin.com/g7S3FBBL";
+        } else {
+          alert("Senha incorreta. Tente novamente.");
+        }
+      }
+    </script>
+  </body>
+</html>
